@@ -10,6 +10,9 @@ body {
     font-size: 1.6rem;
     font-family: 'DM Sans', sans-serif;
 }
+:root {
+    --primary-color: #5D3BEE;
+}
 /* COMMON */
 a {
     text-decoration: none;
@@ -57,7 +60,7 @@ a {
     justify-content: center;
     width: 170px;
     height: 62px;
-    background-color: #5D3BEE;
+    background-color: var(--primary-color);
     color: #FDFDFD;
     font-size: 1.8rem;
     font-weight: 500;
@@ -193,4 +196,32 @@ a {
 .hero__content-decor {
     right: -100px;
     bottom: -40px;
+}
+/* BRAND */
+.brand {
+        margin-top: 100px;
+}
+.brand__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.brand__content {
+    position: relative;
+    padding-left: 99px;
+    padding-right: 110px;
+}
+.brand__heading::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    top: 20%;
+    left: 0;
+    width: 86px;
+    height: 1px;
+    background-color: var(--primary-color);
+}
+.brand__list {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 36px 70px;
 }
