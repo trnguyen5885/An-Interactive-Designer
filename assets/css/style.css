@@ -599,4 +599,15 @@ a {
     height: 529px;
     object-fit: cover;
 }
+/* ACTION */
+.action {
+    margin-top: 140px;
+}
+.action__inner {
+    text-align: center;
+}
+.action__desc {
+    margin: 20px auto 20px;
+    width: 565px;
+}
 
