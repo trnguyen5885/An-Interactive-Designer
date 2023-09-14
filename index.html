@@ -94,51 +94,92 @@
         <link rel="stylesheet" href="./assets/css/grid.css" />
         <!-- STYLE-CSS -->
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- RESPONSIVE -->
+        <link rel="stylesheet" href="./assets/css/responsive.css">
     </head>
     <body>
-        <!-- HEADER -->
+        <!-- PC-HEADER -->
         <header class="header">
-            <div class="main-content">
-                <div class="header__inner">
-                    <!-- EMAIL -->
-                    <div class="email__block">
-                        <figure class="email__image-wrapper">
-                            <img
-                                src="./assets/img/email-img.svg"
-                                alt="Email"
-                                class="email__img"
-                            />
-                        </figure>
-                        <span class="email-text"> hi@arif.interactive </span>
-                    </div>
-                    <!-- LOGO -->
-                    <figure class="logo__image-wrapper">
+        <div class="main-content">
+            <div class="header__inner">
+                <!-- TOGGLE-MENU -->
+                <label for="toggle" class="toggle__menu">
+                    <img src="./assets/img/toggle-menu.svg" alt="" class="toggle__img">
+                </label>
+                <!-- EMAIL -->
+                <div class="email__block">
+                    <figure class="email__image-wrapper">
                         <img
-                            src="./assets/img/Logo.svg"
-                            alt="Logo"
-                            class="logo__img"
+                            src="./assets/img/email-img.svg"
+                            alt="Email"
+                            class="email__img"
                         />
                     </figure>
-                    <!-- NAVBAR -->
-                    <nav class="navbar">
-                        <ul class="navbar__list">
-                            <li class="navbar__item">
-                                <a href="#!" class="navbar__link">Projects</a>
-                            </li>
-                            <li class="navbar__item">
-                                <a href="#!" class="navbar__link">Journey</a>
-                            </li>
-                            <li class="navbar__item">
-                                <a href="#!" class="navbar__link">Service</a>
-                            </li>
-                            <li class="navbar__item">
-                                <a href="#!" class="navbar__link">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <span class="email-text show-on-tablet"> hi@arif.interactive </span>
                 </div>
+                <!-- LOGO -->
+                <figure class="logo__image-wrapper">
+                    <img
+                        src="./assets/img/Logo.svg"
+                        alt="Logo"
+                        class="logo__img"
+                    />
+                </figure>
+                <!-- NAVBAR -->
+                <nav class="navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">Projects</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">Journey</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">Service</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </header>
+        <!-- MOBILE-HEADER -->
+        <header class="mobile-header">
+            <input type="checkbox" name="" id="toggle" class="toggle__input" hidden>
+            <!-- MOBILE-HEADER-OVERLAY -->
+            <label for="toggle" class="mobile-header__overlay"></label>
+            <!-- MOBILE-HEADER-DRAWER -->
+            <label for="toggle" class="mobile-header__drawer">
+                <!-- LOGO -->
+                <figure class="logo__image-wrapper">
+                    <img
+                        src="./assets/img/Logo.svg"
+                        alt="Logo"
+                        class="logo__img"
+                    />
+                </figure>
+                <!-- NAVBAR -->
+                
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">Projects</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">Journey</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">Service</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">Contact</a>
+                        </li>
+                    </ul>
+                
+            </div>
+            </label>
+        </header>
+            </div>
         <main>
             <div class="container">
                 <!-- HERO -->
@@ -386,15 +427,15 @@
             <!-- PROJECTS -->
             <section class="project">
                 <div class="container">
-                    <div class="row row-cols-lg-2 project__inner">
-                        <div class="col-lg-5">
+                    <div class="row row-cols-lg-2  row-cols-sm-1 project__inner">
+                        <div class="col-lg-5 col-md-12">
                             <h2 class="heading project__heading">
                                 Take a look at
                                 <br />
                                 my recent projects
                             </h2>
                         </div>
-                        <div class="col-lg-4 offset-lg-1">
+                        <div class="col-lg-4 offset-lg-1 col-md-12">
                             <p class="desc lv2 project__desc">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit. In urna, non nisl tincidunt ut
@@ -803,7 +844,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-1">
+                    <div class="row row-cols-lg-3 row-cols-md-3 row-cols-1">
                         <div class="col">
                             <figure class="atmosphere__image-wrapper">
                                 <img src="./assets/img/atmosphere-01.jpg" alt="" class="atmosphere__img">
@@ -852,7 +893,7 @@
                                 class="email__img"
                             />
                         </figure>
-                        <span class="email-text"> hi@arif.interactive </span>
+                        <span class="email-text show-on-mobile"> hi@arif.interactive </span>
                     </div>
                     <!-- LOGO -->
                     <figure class="logo__image-wrapper">
@@ -881,7 +922,7 @@
                     
                     </div>
                     <div class="copy-right">
-                        <p class="desc lv2 copy-right__desc">©interactiveArif 2021. All rights reserved.</p>
+                        <p class="desc lv2 copy-right__desc show-on-mobile">©interactiveArif 2021. All rights reserved.</p>
                         <p class="desc lv2 copy-right__desc">Privacy Policy &#32;	&#124;  &#32;Terms of Conditions</p>
                     </div>
                 </div>
